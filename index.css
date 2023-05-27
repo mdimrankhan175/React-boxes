@@ -1,0 +1,91 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.box-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: aqua;
+  width: 45%;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .box-card-container {
+    width: 100%;
+  }
+}
+
+.heading {
+  font-family: "Roboto";
+  margin-bottom: 40px;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media screen and (min-width: 768px) {
+  .boxes-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 40px;
+  }
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+.small-box {
+  background-color: #fbbf24;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.medium-box {
+  background-color: #38bdf8;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 40px;
+}
+
+.large-box {
+  background-color: #ec4899;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .small-box {
+    margin-right: 40px;
+  }
+  .medium-box {
+    margin-right: 40px;
+  }
+  .large-box {
+    margin-right: 40px;
+  }
+}
